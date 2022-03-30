@@ -1,5 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body {
+    display: flex;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+    background-color: burlywood;
+}
+
+.calculator {
+    width: 400px;
+    padding: 32px;
+    background-color: rgb(0, 0, 61);
+    border-radius: 30px;
+    border: 10px outset rgb(0, 0, 61);
+}
+
+.screen {
+    border: 5px inset rgb(0, 0, 61);
+    background-color: darkolivegreen;
+    font-family: 'Press Start 2P', cursive;
+    letter-spacing: 0;
+    grid-column: 1/5;
+    margin-bottom: 20px;
+    padding: 32px 16px;
+    text-align: end;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.btn {
+    border: 1px solid black;
+    background: rgb(112, 112, 112);
+    height: 67.75px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.front {
+    background: rgb(182, 182, 182);
+    transform: translateY(-5px);
+    display: block;
+    height: 100%;
+    border-radius: 12px;
+    line-height: 67.75px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #111;
+}
+
+.btn:active .front {
+    transform: translateY(0px);
+}
+
+.btn.c  {
+    background-color: rgb(100, 0, 0);
+}
+
+.btn.c .front {
+    background-color: rgb(173, 0, 0);
+}
+
+.btn.symbol {
+    background-color: rgb(47, 89, 90);
+}
+
+.btn.symbol .front {
+    background-color: cadetblue;
+}
+
+.btn.equal {
+    grid-column: 3/5;
+    background-color: rgb(0, 0, 0);
+}
+
+.btn.equal .front {
+    background-color: rgb(24, 24, 24);
+    color: white;
 }
