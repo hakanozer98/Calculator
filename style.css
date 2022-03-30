@@ -26,11 +26,14 @@ body {
     border: 5px inset rgb(0, 0, 61);
     background-color: darkolivegreen;
     font-family: 'Press Start 2P', cursive;
-    letter-spacing: 0;
-    grid-column: 1/5;
+    height: 80px;
     margin-bottom: 20px;
-    padding: 32px 16px;
     text-align: end;
+}
+
+.screen > * {
+    padding: 8px;
+    height: 50%;
 }
 
 .buttons {
@@ -71,11 +74,13 @@ body {
     background-color: rgb(173, 0, 0);
 }
 
-.btn.symbol {
+.btn.symbol,
+.btn.operator {
     background-color: rgb(47, 89, 90);
 }
 
-.btn.symbol .front {
+.btn.symbol .front,
+.btn.operator .front {
     background-color: cadetblue;
 }
 
