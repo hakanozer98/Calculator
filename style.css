@@ -35,6 +35,8 @@ body {
     padding: 8px;
     height: 50%;
     overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .buttons {

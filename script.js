@@ -84,7 +84,7 @@ equalBUtton.addEventListener('click', () => {
 });
 
 dotButton.addEventListener('click', () => {
-    if(!currentNumber.includes('.')) {
+    if(!currentNumber.includes('.') && currentNumber.length != 0) {
         currentNumber += '.';
         updateDisplay();
     }
